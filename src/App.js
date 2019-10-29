@@ -1,24 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import AppHeader from './view/AppHeader/AppHeader'
+import AppBody from './view/AppBody/AppBody'
+import AppBottom from './view/AppBottom/AppBottom'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AppHeader name="首页"/>
+      <AppBody name="中部"/>
+      <AppBottom name="底部"/>
     </div>
   );
 }
